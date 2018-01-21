@@ -3,13 +3,22 @@ Setup Xdebug in VS Code to debug your PHP Code on fly. follow the step by step i
 
 ## See in action (Video) [Click to Play](https://drive.google.com/file/d/1cZ7uTBFiOXQ6oERi-vXPO5znBwKoFtjj/view?usp=sharing)
 
+---
+
+## Gif action:
+![VSCode Gif](VSCodeGif.gif)
+
+---
+
 ## How to setup PHP Debugging (xdebug) with VSCode?
 
-1. [First of all Install VSCode](https://code.visualstudio.com/Download)
+## 1. [First of all Install VSCode](https://code.visualstudio.com/Download)
 
-2. [Install PHP Debug Adapter for Visual Studio Code](https://github.com/felixfbecker/vscode-php-debug)
+## 2. [Install PHP Debug Adapter for Visual Studio Code](https://github.com/felixfbecker/vscode-php-debug)
 
-3. [Install XDebug in WAMP](https://xdebug.org/wizard.php)
+## 3. [Install XDebug in WAMP](https://xdebug.org/wizard.php)
+
+---
 
 >Open phpinfo in browser
 >Copy the view sorce code
@@ -38,17 +47,21 @@ xdebug.profiler_output_dir="<tmp path>"
 ;Example
 ;xdebug.profiler_output_dir="d:\wamp64\tmp"
 ```
+---
 
-4. Restart WAMP Server
+## 4. Restart WAMP Server
 
 >Open phpinfo & find xdebug, If found then you have installed xdebug successfully!
 >If Wamp Restart But localhost not opening then try to change PORT. May PORT using by any other
 >application already.
 
+---
+
 ### [How can you find out which process is listening on a port on Windows?](https://stackoverflow.com/questions/48198/how-can-you-find-out-which-process-is-listening-on-a-port-on-windows)
 
 ### [Setup XDebug in VSCode](https://github.com/felixfbecker/vscode-php-debug)
 
+---
 
 >Example JSON - launch.json
 
@@ -76,15 +89,17 @@ xdebug.profiler_output_dir="<tmp path>"
     ]
 }
 ```
+---
 
-5. Update VSCode Setting for PHP to add PHP Executable Path
+## 5. Update VSCode Setting for PHP to add PHP Executable Path
 
 ```json
 "php.validate.run": "onType",
 "php.validate.executablePath": "<Your-Full-PHP-Path>php.exe"
 ```
+---
 
-6. Save and restart VSCode
+## 6. Save and restart VSCode
 
 Open PHP Project Folder and try to Debug code..If you are getting following error
 
@@ -98,6 +113,8 @@ Still getting error then try to find which program using PORT 9000 and kill them
 .. Still getting error try to change PORT in php.ini and launch.json and restart wamp and VSCode.
 
 Now you can see Xdebugger working in VSCode.
+
+---
 
 #### Example Code to test
 
