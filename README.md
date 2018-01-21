@@ -103,16 +103,15 @@ xdebug.profiler_output_dir="<tmp path>"
 
 Open PHP Project Folder and try to Debug code..If you are getting following error
 
-#### VS Code Debug adapter process has terminated unexpectedly
-#### VS Code Console Error -> listen EADDRINUSE::900)
+#### * VS Code Debug adapter process has terminated unexpectedly or
+#### * VS Code Console Error -> listen EADDRINUSE::900)
 
-Thats mean the PORT 9000 is being used by another, May have you are running PHPStorm Xdebug
-Close the PHPStorm and try to debug again.
+Thats mean the PORT 9000 is currently using by another programe, You may have running PHPStorm Xdebug or any other application who using the PORT 9000. Try to Close the PHPStorm or Other programe and try to debug again.
 
 Still getting error then try to find which program using PORT 9000 and kill them
 .. Still getting error try to change PORT in php.ini and launch.json and restart wamp and VSCode.
 
-Now you can see Xdebugger working in VSCode.
+Now you can see XDEBUG working in VSCode.
 
 ---
 
